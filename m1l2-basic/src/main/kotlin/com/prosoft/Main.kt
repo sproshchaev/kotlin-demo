@@ -81,4 +81,17 @@ fun main() {
         println(any + "test")
     }
 
+    /** Null Safety  */
+    var f: String? = "abc"
+    f = null
+
+    var f2: String = "abc"
+    // f2 = null // Null can not be a value
+
+
+    val myName: String? = "John Doe"
+    val nonNullName = myName!!  // Вызовет исключение, если myName равно null
+    println("Привет, $nonNullName!")
+
+
 }
